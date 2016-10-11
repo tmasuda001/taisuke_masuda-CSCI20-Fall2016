@@ -10,8 +10,8 @@
 #include <string>
 using namespace std;
 
-void function1(){
 //1
+void function1(){
 int suzyAge = 25; 
 int johnAge = 21; 
 string string1 = "";
