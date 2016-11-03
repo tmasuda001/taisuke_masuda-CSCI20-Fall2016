@@ -53,10 +53,10 @@ int main(){
     cout << "Which of the three user names would you like?" << endl;
     
     for(i = 0; i < firstName.length(); ++i){                             //changes firstName array to lowercase
-    firstName[i] = tolower(firstName[i]);
+    firstName.at(i) = tolower(firstName.at(i));
     }
     for(i = 0; i < lastName.length(); ++i){                              //changes lastName array to lowercase
-    lastName[i] = tolower(lastName[i]);
+    lastName.at(i) = tolower(lastName.at(i));
     }
     
     cout << "1)" << firstName.at(0) << firstName.at(1) << lastName << endl;
