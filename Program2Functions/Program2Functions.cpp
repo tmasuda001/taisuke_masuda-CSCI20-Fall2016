@@ -49,7 +49,7 @@ int main(){
     ATM user1;
  
     do{
-    cout << "Woud you like to (1) Deposit, (2) Withdraw, or (3) Print Balance?" << endl;
+    cout << "Would you like to (1) Deposit, (2) Withdraw, or (3) Print Balance?" << endl;
     cin >> userChoice;   
     if(userChoice == 1){
         int deposit = 0;
