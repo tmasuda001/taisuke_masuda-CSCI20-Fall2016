@@ -10,6 +10,8 @@
 //Add each line and each column of the array
 //Output the array and totals into an output file named output.txt
 
+
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -23,7 +25,7 @@ int main(){
     int array[NUM_ROW][NUM_COL]   = {0};       //Data from file row 1
     string xFile = "";                 //File for transfering data, input from user.
     
-    cout << "Enter file name: " << endl;
+    cout << "Enter file name: FIXME(ADD IOMANIP INTO LOOPS?) " << endl;
     cin >> xFile;
     
     cout << "Opening file " << xFile << "." << endl;
@@ -71,6 +73,26 @@ int main(){
     }
     cout << "Col 1 sum: " << col1total << endl;
     
+    int col2total = 0;      //col 2 sum
+    for(int i = 0; i < NUM_ROW; ++i){
+        col2total += array[i][1];
+        
+    }
+    cout << "Col 2 sum: " << col2total << endl;
+    
+    int col3total = 0;      //col 3 sum
+    for(int i = 0; i < NUM_ROW; ++i){
+        col3total += array[i][2];
+        
+    }
+    cout << "Col 3 sum: " << col3total << endl;
+    
+    int col4total = 0;      //col 4 sum
+    for(int i = 0; i < NUM_ROW; ++i){
+        col4total += array[i][3];
+        
+    }
+    cout << "Col 4 sum: " << col4total << endl;
     //}
     // while(fsIN.is_open()){
     //     for(int i = 0; i < NUM_ROW; ++i){
